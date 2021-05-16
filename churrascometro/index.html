@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon-16x16.png" type="carnes.img">
+  <title>CHURRASCÔMETRO</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+         <h1><strong><u style="background-color:rgba(255, 255, 255, 0.363);">CHURRASCÔMETRO</u></strong></h1>
+  </header>
+  <section>
+    <div class="churras">
+        <h2 class="fundo"><strong>Informações do Churrasco</strong></h2>
+        <p><strong>Adultos de 1 a 100: <input type="number" id="txt"></strong></p>
+        <p><strong>Crianças de 1 a 100: <input type="number" id="txt2"></strong></p>
+       
+        <h2 class="fundo"><strong>Carnes e Acompanhamento:</strong></h2>
+        <p>
+          <input type="checkbox" name="carnes" id="alcatra" value="0" checked> Alcatra</label>
+          <label for="picanha"><input type="checkbox" name="carnes" value="1" id="picanha">Picanha</label>
+          <label for="calabresa"><input type="checkbox" name="carnes" value="2"  id="calabresa"> Calabresa</label>
+          <label for="pao"><input type="checkbox" name="carnes" value="3"  id="pao">Pão de Alho</label></strong></p>
+        </p>
+       
+      <h2 class="fundo"><strong>Bebidas:</strong></h2>
+        <p>
+          <label for="refrigerante"><input type="checkbox" name="bebida" value="4"id="refrigerante" checked > Refrigerante</label>
+        <label for="cerveja"><input type="checkbox" name="bebida" value="5" id="cerveja">Cerveja</label>
+      
+        </p>
+        <input type="button" value="Calcular" onclick="verificar()">
+        <button id="but" onclick="limpar()">Limpar</button>
+    </div>
+    <div  id="res"><br>
+        <strong>A quantidade para o churrasco é de:</strong><br>
+    </div>
+    <div id = "res2"><br>
+        <strong>A quantidade de Bebida é: </strong><br>
+    </div>
+  </section>
+  <footer>
+      <p><strong><i>&copy;EdrielleProduction</i></p></strong>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
